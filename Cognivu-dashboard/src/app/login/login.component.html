@@ -1,0 +1,104 @@
+<!--<div class="container mt-5">
+    <div class="card" style="padding: 20px;">
+        <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+            <input type="text"
+            ngModel
+            name="userName"
+            id="userName"
+            placeholder="Enter your username"
+            class="form-control mb-3"
+            >
+
+            <input type="password"
+            ngModel
+            name="userPassword"
+            id="userPassword"
+            placeholder="Enter your password"
+            class="form-control mb-3"
+            >
+
+            <input type="submit"
+            value="Login"
+            class="btn btn-outline-primary form-control rounded-0">
+        </form>
+    </div>
+</div>--> 
+
+<!--<img src="../../../assets/img/varisu-561.jpg" alt="">-->
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script type="text/javascript" src="login.component.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+           <form class="login" id="myForm" #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+              <p class="title">
+                <img src="../../assets/img/Cognivu.png" alt="cognivu">
+              </p>
+              <input type="text" name="userName" id="userName" placeholder="userName" required ngModel />
+              <i class="fa fa-user"></i>
+              <input type="password" ngModel name="userPassword" id="userPassword" placeholder="userPassword" />
+              <i class="fa fa-key"></i>
+              <button type="submit" value="Login">
+                <i class="spinner"></i>
+                <span class="state">Login</span>
+              </button>
+              <p *ngIf="errorMessage">Wrong credential, please try again.</p>
+            </form>
+            <footer>Developed by Mandar</footer>
+          </div>
+<!--<div class="container-fluid">
+   <div class="row mt-5">
+       <div class="col"></div>
+       <div class="col-4" >
+       <div class="logo">
+        <div id="bold">
+            <b>Welcome to</b>
+        </div>
+           <img width="400" src="../../../assets/img/Cognivu.png" alt="">
+        </div>
+           <div class="card shadow">
+               <div class="card-body">
+                   <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+                       <div class="mb-3">
+                         <label for="exampleInputEmail1" class="form-label">Username</label>
+                         <input type="text"
+            ngModel
+            name="userName"
+            id="userName"
+            placeholder="Enter your username"
+            class="form-control mb-3"
+            >
+                       </div>
+                       <div class="mb-3">
+                         <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password"
+            ngModel
+            name="userPassword"
+            id="userPassword"
+            placeholder="Enter your password"
+            class="form-control mb-3">
+                       </div>
+                       <input type="submit" value="Login" class="btn btn-outline-primary form-control rounded-0">
+                       <div class="row">
+                           <div class="col-md-6">
+                               <a href="/register" style="text-decoration: none;"><span class="text-danger"></span></a>
+                           </div>
+   
+                       </div>
+               
+                   </form>
+               </div>
+           </div>
+       </div>
+       <div class="col" ></div>
+   </div>
+</div>-->
+</body>
+</html>
